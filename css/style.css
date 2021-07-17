@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    --main-color: #283526;
+    --primry-color: #888888;
+    --button-background: #4b709e;
+    --primary-button-background: #fe7649;
+    --background-color: #f0f7ff;
+}
+
+h1,
+h2 {
+    font-weight: Rubric;
+    color: var(--main-color);
+}
+
+h3,
+h4 {
+    font-family: "muli";
+    color: var(--main-color);
+}
+
+h3 {
+    font-weight: 750;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+
+p,
+a,
+li,
+button {
+    font-family: "muli";
+    color: var(--primry-color);
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+
+/* ---------------------------OUR MENU STYLE------------------ */
+
+header {
+    padding: 0 20rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+}
+
+header nav .left-side-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    /* background-color: #e2efff; */
+}
+
+header nav .left-side-menu a img {
+    width: 13rem;
+    height: 5.5rem;
+}
+
+header nav .left-side-menu .sub-menu {
+    height: inherit;
+    display: flex;
+    position: relative;
+    z-index: 99;
+}
+
+header nav .left-side-menu .sub-menu a {
+    margin-right: 4rem;
+}
+
+header nav .left-side-menu .sub-menu a li {
+    font-size: 2.75rem;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    transition: all 0.2s;
+}
+
+header nav .left-side-menu .sub-menu a li:hover {
+    color: var(--button-background);
+}
+
+
+/* right side menu css style  */
+
+header .right-side-menu {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+header .right-side-menu .sub-menu {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .right-side-menu .sub-menu a img {
+    margin-right: 8rem;
+    /* 0.25rem */
+    padding: 0.7rem 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 9;
+}
+
+header .right-side-menu .sub-menu button {
+    padding: 0.5rem 2.5rem;
+    background-color: var(--button-background);
+    color: #fff;
+    position: relative;
+    z-index: 9;
+}
+
+header .right-side-menu .sub-menu button:hover {
+    background: #1b3d68;
+}
+
+header .right-side-menu .sub-menu a li:hover {
+    color: var(--button-background);
+}
+
+
+/* -------------------------------------- our hero css style 
+--------------------------------------------------------------------------- */
+
+.main-hero-section {
+    padding: 0 20rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.main-hero-section .hero-left-side {
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.main-hero-section .hero-right-side {
+    width: 15%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 40rem;
+}
+
+.main-hero-section h1 {
+    width: 95rem;
+    font-size: 11.5rem;
+    line-height: 12rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.main-hero-section a img {
+    width: 13.5rem;
+    height: 5rem;
+    margin-right: 80rem;
+   
+}
+
+
+
+
+
+
+
+/* Get Started Button */
+
+.purple-btn a{
+  color: white;
+  text-decoration:none;
+  text-align: center;
+  display:block; /* important */
+}
+
+.purple-btn, .first-link{
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;     
+}
+
+
+.purple-btn{
+  height: 64px;
+  font: normal 700 2.5rem Arial,sans-serif;
+  
+  overflow: hidden;
+  width: 200px;
+  background-color: #8c30f5;
+  border-radius: 15px;
+}
+
+.purple-btn:hover{
+   background-color: #003D60;
+  
+}
+
+.purple-btn a:hover{
+  text-decoration: none;
+}
+
+.first-link{
+  margin-top: 0.5em;   
+}
